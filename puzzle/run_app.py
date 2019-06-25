@@ -18,7 +18,7 @@ def eng_grp():
         'Phone': '732-742-9108',
         'Position': 'Software Engineer',
         'Puzzle': 'ABCD\nA=><>\nB<=<>\nC>>=>\nD<<<=',
-        'Resume': 'OK',
+        'Resume': 'http://162.243.13.59:5550/engine_group/download/resume',
         'Source': 'git@github.com:rakeshdodda8/engine_group.git',
         'Status': 'Yes'
     }
