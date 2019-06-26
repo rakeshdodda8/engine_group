@@ -4,6 +4,7 @@ from puzzle.settings import RESUME_FILE_NAME
 
 ra = Blueprint("run_app", __name__)
 
+
 @ra.route('/engine_group', methods = ['GET'])
 def eng_grp():
     qs = request.args.get('q')
@@ -16,14 +17,15 @@ def eng_grp():
         'Degree': 'Masters of Science in Computer Science',
         'Phone': '732-742-9108',
         'Position': 'Software Engineer',
-        'Puzzle': 'ABCD\nA=><>\nB<=<>\nC>>=>\nD<<<=',
+        'Puzzle': ' ABCD\nA=><>\nB<=<>\nC>>=>\nD<<<=',
         'Resume': 'http://162.243.13.59:5550/engine_group/download/resume',
-        'Source': 'git@github.com:rakeshdodda8/engine_group.git',
+        'Source': 'https://github.com/rakeshdodda8/engine_group',
         'Status': 'Yes'
     }
 
     if qs in data:
         return data[qs], 200
+    return "Invalid query param", 404
 
 @ra.route("/engine_group/download/resume", methods = ['GET'])
 def download_resume():
@@ -31,4 +33,4 @@ def download_resume():
     try:
         return send_file(path, as_attachment=True)
     except Exception as e:
-        return "error downloading resume", 200
+        return "Error downloading resume", 404
