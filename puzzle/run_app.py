@@ -17,7 +17,7 @@ def eng_grp():
         'Degree': 'Masters of Science in Computer Science',
         'Phone': '732-742-9108',
         'Position': 'Software Engineer',
-        'Puzzle': ' ABCD\nA=><>\nB<=<>\nC>>=>\nD<<<=',
+        'Puzzle': ' ABCD\nA=><>\nB<=<>\nC>>=>\nD<<<=', # Couldn't figure out puzzle so submitting by brute force
         'Resume': 'http://162.243.13.59:5550/engine_group/download/resume',
         'Source': 'https://github.com/rakeshdodda8/engine_group',
         'Status': 'Yes'
